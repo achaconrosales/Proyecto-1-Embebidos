@@ -1,1 +1,0 @@
-En este Repositorio se muestran los archivos necesarios para el desarrollo del proyecto 1
