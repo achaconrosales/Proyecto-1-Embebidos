@@ -1,0 +1,37 @@
+# Configuracion del emisor Secure Vision.
+# Despues de editar:  systemctl restart control-acceso
+
+# PC del guardia que recibe el video en vivo (RTP/JPEG por UDP)
+SV_PC_HOST=10.208.1.36
+SV_UDP_PORT=5000
+
+# Camara: /dev/video0, "test" (videotestsrc) o "imagen:/ruta.png"
+SV_DISPOSITIVO=/dev/video0
+# raw  = la camara entrega YUY2 y se codifica JPEG en la CPU
+# mjpeg = la camara entrega JPEG y no se recodifica (menos CPU)
+SV_FORMATO_CAMARA=raw
+SV_ANCHO=640
+SV_ALTO=480
+SV_FPS=30
+
+# Codificador JPEG: jpegenc (CPU) o v4l2jpegenc (bloque de hardware, si existe)
+SV_JPEGENC=jpegenc
+SV_JPEG_CALIDAD=85
+
+# Analisis de rostros
+SV_ANALISIS_FPS=10
+SV_ANALISIS_ANCHO=320
+SV_CARA_MINIMA=24
+SV_TIEMPO_MAX_DECISION=0.5
+
+# Eventos: clips de SV_DURACION_EVENTO s, maximo SV_MAX_EVENTOS en la tarjeta
+SV_DIR_EVENTOS=/home/root/eventos
+SV_BITACORA=/home/root/bitacora_accesos.csv
+SV_MAX_EVENTOS=10
+SV_DURACION_EVENTO=5
+SV_MIN_LIBRE_MB=100
+
+# GPIO: rojo = cerrado, verde = abierto (la cerradura va en el verde)
+SV_GPIO_CHIP=/dev/gpiochip0
+SV_PIN_ROJO=17
+SV_PIN_VERDE=27

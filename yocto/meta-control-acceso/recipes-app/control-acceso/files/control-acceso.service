@@ -1,0 +1,29 @@
+[Unit]
+Description=Secure Vision - control de acceso con deteccion de rostros
+# No depende de la red: la puerta debe funcionar aunque la PC no este.
+After=local-fs.target time-sync.target
+# Reintentar siempre (E3): si la camara no esta, se vuelve a probar cada 5 s.
+StartLimitIntervalSec=0
+
+[Service]
+# El programa avisa READY=1 cuando recibe el primer cuadro y WATCHDOG=1 cada segundo.
+Type=notify
+NotifyAccess=main
+EnvironmentFile=-/etc/default/control-acceso
+ExecStart=/usr/bin/python3 -u /usr/bin/control_acceso.py
+WorkingDirectory=/home/root
+
+# Decision explicita (E3): ante un error el proceso termina con codigo 1
+# y systemd lo reinicia. Tambien si el ciclo se cuelga (WatchdogSec).
+Restart=on-failure
+RestartSec=5
+WatchdogSec=15
+TimeoutStartSec=30
+
+# systemctl stop envia SIGTERM: el programa cierra la puerta, manda EOS al
+# clip en curso y espera a que quede reproducible (E4).
+KillSignal=SIGTERM
+TimeoutStopSec=15
+
+[Install]
+WantedBy=multi-user.target
