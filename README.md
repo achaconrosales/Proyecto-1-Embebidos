@@ -433,19 +433,61 @@ systemctl restart control-acceso
 
 ## 10. Uso con la PC del guardia
 
-En la PC, con Python, GStreamer y PyQt6 instalados:
+### 10.1 Crear el entorno de Python
+
+Desde la raíz del repositorio:
 
 ```bash
-sudo apt install python3-gi gir1.2-gstreamer-1.0 gstreamer1.0-plugins-base \
-  gstreamer1.0-plugins-good python3-pyqt6 openssh-client
-cd "$REPO/pc-guardia"
+cd "$REPO"
+
+# 1. Dependencias del sistema (GStreamer y PyGObject se instalan con apt, no con pip)
+sudo apt install -y python3-venv python3-gi gir1.2-gstreamer-1.0 \
+  gstreamer1.0-plugins-base gstreamer1.0-plugins-good openssh-client
+
+# 2. Crear el entorno CON acceso a los paquetes del sistema (necesario para "gi")
+python3 -m venv --system-site-packages .venv
+
+# 3. Activarlo e instalar lo de requirements.txt
+source .venv/bin/activate
+pip install -r pc-guardia/requirements.txt
+```
+
+`--system-site-packages` es necesario: PyGObject (`gi`, el puente entre Python y GStreamer) viene del sistema y no se instala bien con `pip`. Sin esa opción, la aplicación falla con `ModuleNotFoundError: No module named 'gi'`.
+
+
+### 10.2 Configurar la IP de la Raspberry
+
+La IP de la Raspberry la asigna el router. Con la Raspberry encendida, se ve de qué dirección llega el video:
+
+```bash
+sudo tcpdump -n -i any -c 1 udp port 5000
+```
+
+Ejemplo: `IP 10.208.1.62.49566 > 10.208.1.36.5000` → la Raspberry es `10.208.1.62` (la dirección de la izquierda, sin el último número).
+
+Dejarla fija en la aplicación:
+
+```bash
+sed -i 's/root@[0-9.]*"/root@10.208.1.62"/' pc-guardia/security_guard_app.py
+grep -m1 "^RPI_HOST" pc-guardia/security_guard_app.py
+```
+
+O, sin modificar el archivo, al ejecutarla: `SECUREVISION_RPI_HOST=root@<IP> python3 security_guard_app.py`.
+
+### 11.3 Ejecutar la aplicación
+
+```bash
+cd "$REPO"
+source .venv/bin/activate
+cd pc-guardia
 python3 security_guard_app.py
 ```
 
 - Usuario `guardia`, contraseña `1234`.
-- El video aparece en vivo (`● LIVE`) y los clips se descargan solos cada 15 s a la carpeta `eventos/`.
+- El video aparece en vivo (`● LIVE`) y los clips se descargan solos cada 15 s a la carpeta `eventos/`, junto al script.
+- La barra superior muestra `SYNC: OK` cuando la conexión SSH con la Raspberry funciona.
 - La aplicación ya trae la contraseña SSH de la Raspberry (`RPI_SSH_PASSWORD`).
-- Si la Raspberry recibió otra IP: `SECUREVISION_RPI_HOST=root@<IP> python3 security_guard_app.py`.
+
 
 ---
 
