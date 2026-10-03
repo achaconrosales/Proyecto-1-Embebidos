@@ -22,19 +22,7 @@ Este enfoque evita registrar datos biométricos o mantener una base de personas,
 
 ## Cómo funciona
 
-```
-      ENTRADA                          RASPBERRY PI                         PC DEL GUARDIA
- ┌──────────────┐           ┌─────────────────────────────┐           ┌──────────────────────┐
- │   Persona    │  cámara   │  ¿Hay un rostro?            │  video en │  Vista en vivo       │
- │  frente a la │ ────────► │    sí → abrir puerta 5 s    │  vivo ──► │                      │
- │   cámara     │           │         grabar video 5 s    │           │  Lista de eventos    │
- └──────────────┘           │         anotar en bitácora  │  videos ─►│  (videos + bitácora) │
-                            │    no → puerta cerrada      │           │                      │
-                            └──────────────┬──────────────┘           └──────────────────────┘
-                                           │
-                                     LED rojo / verde
-                                     (cerradura)
-```
+![Diagrama de funcionamiento del sistema](Diagrama%20de%20funcionamiento.png)
 
 1. **Vigilar.** La Raspberry mira la cámara todo el tiempo y envía el video en vivo a la PC del guardia.
 2. **Detectar.** Si aparece un rostro, se considera un evento.
