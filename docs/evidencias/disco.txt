@@ -1,0 +1,6 @@
+
+== Escritura en /dev/mmcblk0 durante 60 s
+Escritura: 61.2 KB/s
+Libre en la partición de eventos: 1.3G
+Ocupado por los clips: 31.1M
+Detalle: iostat -x 5

@@ -1,0 +1,13 @@
+
+== kill -9 961
+● control-acceso.service - Secure Vision - control de acceso con deteccion de rostros
+     Loaded: loaded (/usr/lib/systemd/system/control-acceso.service; enabled; preset: enabled)
+     Active: activating (start) since Thu 2026-10-01 14:41:09 UTC; 8s ago
+        Job: 6718
+ Invocation: 0ed6c7136b25477cbc3b4af0a5bcde37
+OK: systemd lo reinició (pid nuevo 1676)
+Bitácora:
+2026-10-01T14:39:44+00:00,acceso,rostros=1 decision_ms=152,acceso_20261001_143944.avi
+2026-10-01T14:39:49+00:00,cierre,fin del evento,acceso_20261001_143944.avi
+2026-10-01T14:39:49+00:00,clip_guardado,76 cuadros,acceso_20261001_143944.avi
+2026-10-01T14:39:49+00:00,clip_rotado,limite=10,acceso_20261001_142502.avi

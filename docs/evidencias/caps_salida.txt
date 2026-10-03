@@ -1,0 +1,20 @@
+Deteniendo control-acceso (la cámara es exclusiva)...
+
+== Ejecutando el pipeline 5 s con -v y GST_DEBUG_DUMP_DOT_DIR
+Caps negociados: /home/root/evidencias/caps_negociados.txt (32 pads)
+
+== Conversiones en el grafo real (A5)
+  videoscale0      GstVideoScale        YUY2 640x480 -> YUY2 320x240  CONVIERTE
+  videoconvert0    GstVideoConvert      YUY2 320x240 -> GRAY8 320x240  CONVIERTE
+  videoconvert1    GstVideoConvert      YUY2 640x480 -> YUY2 640x480  passthrough (no convierte)
+Total: 3 elementos de conversión, 2 convierten de verdad
+
+== Grafo del pipeline (A6, B1)
+  /home/root/evidencias/dot/0.00.00.106484328-gst-launch.NULL_READY.dot
+  /home/root/evidencias/dot/0.00.00.118823642-gst-launch.READY_PAUSED.dot
+  /home/root/evidencias/dot/0.00.00.847297575-gst-launch.PAUSED_PLAYING.dot
+  /home/root/evidencias/dot/0.00.04.999631940-gst-launch.PLAYING_PAUSED.dot
+  /home/root/evidencias/dot/0.00.05.009400830-gst-launch.PAUSED_READY.dot
+En la PC (con graphviz):
+  scp root@<IP_RPI>:/home/root/evidencias/dot/*PLAYING*.dot . && dot -Tpng *PLAYING*.dot -o grafo.png
+Arrancando de nuevo control-acceso...

@@ -1,0 +1,44 @@
+
+== Dispositivos V4L2
+bcm2835-codec-decode (platform:bcm2835-codec):
+	/dev/video10
+	/dev/video11
+	/dev/video12
+	/dev/video18
+	/dev/video31
+
+bcm2835-isp (platform:bcm2835-isp):
+	/dev/video13
+	/dev/video14
+	/dev/video15
+	/dev/video16
+	/dev/video20
+	/dev/video21
+	/dev/video22
+	/dev/video23
+	/dev/media0
+	/dev/media2
+
+rpi-hevc-dec (platform:rpi-hevc-dec):
+	/dev/video19
+	/dev/media1
+
+UVC Camera (046d:0994) (usb-0000:01:00.0-1.4):
+	/dev/video0
+	/dev/video1
+	/dev/media4
+
+bcm2835-codec (vchiq:bcm2835-codec):
+	/dev/media3
+Elementos v4l2 de GStreamer:
+    v4l2convert: V4L2 Video Converter
+    v4l2deviceprovider: Video (video4linux2) Device Provider
+    v4l2h264dec: V4L2 H264 Decoder
+    v4l2h264enc: V4L2 H.264 Encoder
+    v4l2jpegdec: V4L2 JPEG Decoder
+    v4l2jpegenc: V4L2 JPEG Encoder
+    v4l2radio: Radio (video4linux2) Tuner
+    v4l2sink: Video (video4linux2) Sink
+    v4l2src: Video (video4linux2) Source
+    v4l2video18convert: V4L2 Video Converter
+    v4l2video31jpegenc: V4L2 JPEG Encoder

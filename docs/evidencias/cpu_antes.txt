@@ -1,0 +1,9 @@
+961 121 python3
+962 0 pool-spawner
+963 0 q_grabacion:src
+964 0 q_red:src
+965 1 q_analisis:src
+966 1 q_codificador:s
+967 3 v4l2src0:src
+968 0 pool-5
+969 0 vigilante

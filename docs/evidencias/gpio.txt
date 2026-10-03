@@ -1,0 +1,6 @@
+
+== GPIO
+gpiochip0 17	"GPIO17"        	output consumer="control-acceso"
+gpiochip0 27	"GPIO27"        	output consumer="control-acceso"
+gpio=17=op,dh
+gpio=27=op,dl

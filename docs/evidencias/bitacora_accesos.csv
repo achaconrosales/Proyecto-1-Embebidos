@@ -1,0 +1,60 @@
+fecha,evento,detalle,archivo
+2026-03-13T15:35:17+00:00,inicio,destino=10.208.1.36:5000 max_eventos=10,
+2026-03-13T15:35:17+00:00,acceso,rostros=1 decision_ms=154,acceso_20260313_153517.avi
+2026-10-01T14:24:43+00:00,cierre,fin del evento,acceso_20260313_153517.avi
+2026-10-01T14:24:44+00:00,clip_guardado,75 cuadros,acceso_20260313_153517.avi
+2026-10-01T14:24:44+00:00,acceso,rostros=1 decision_ms=175,acceso_20261001_142444.avi
+2026-10-01T14:24:49+00:00,cierre,fin del evento,acceso_20261001_142444.avi
+2026-10-01T14:24:49+00:00,clip_guardado,75 cuadros,acceso_20261001_142444.avi
+2026-10-01T14:24:49+00:00,acceso,rostros=1 decision_ms=191,acceso_20261001_142449.avi
+2026-10-01T14:24:54+00:00,cierre,fin del evento,acceso_20261001_142449.avi
+2026-10-01T14:24:54+00:00,clip_guardado,75 cuadros,acceso_20261001_142449.avi
+2026-10-01T14:24:57+00:00,acceso,rostros=1 decision_ms=111,acceso_20261001_142457.avi
+2026-10-01T14:25:02+00:00,cierre,fin del evento,acceso_20261001_142457.avi
+2026-10-01T14:25:02+00:00,clip_guardado,76 cuadros,acceso_20261001_142457.avi
+2026-10-01T14:25:02+00:00,acceso,rostros=1 decision_ms=158,acceso_20261001_142502.avi
+2026-10-01T14:25:08+00:00,cierre,fin del evento,acceso_20261001_142502.avi
+2026-10-01T14:25:08+00:00,clip_guardado,76 cuadros,acceso_20261001_142502.avi
+2026-10-01T14:25:08+00:00,acceso,rostros=1 decision_ms=159,acceso_20261001_142508.avi
+2026-10-01T14:25:13+00:00,cierre,fin del evento,acceso_20261001_142508.avi
+2026-10-01T14:25:13+00:00,clip_guardado,75 cuadros,acceso_20261001_142508.avi
+2026-10-01T14:25:13+00:00,acceso,rostros=1 decision_ms=123,acceso_20261001_142513.avi
+2026-10-01T14:25:18+00:00,cierre,fin del evento,acceso_20261001_142513.avi
+2026-10-01T14:25:19+00:00,clip_guardado,75 cuadros,acceso_20261001_142513.avi
+2026-10-01T14:25:19+00:00,acceso,rostros=1 decision_ms=203,acceso_20261001_142519.avi
+2026-10-01T14:25:24+00:00,cierre,fin del evento,acceso_20261001_142519.avi
+2026-10-01T14:25:24+00:00,clip_guardado,75 cuadros,acceso_20261001_142519.avi
+2026-10-01T14:25:24+00:00,acceso,rostros=1 decision_ms=172,acceso_20261001_142524.avi
+2026-10-01T14:25:29+00:00,cierre,fin del evento,acceso_20261001_142524.avi
+2026-10-01T14:25:29+00:00,clip_guardado,75 cuadros,acceso_20261001_142524.avi
+2026-10-01T14:28:43+00:00,acceso,rostros=1 decision_ms=108,acceso_20261001_142843.avi
+2026-10-01T14:28:48+00:00,cierre,fin del evento,acceso_20261001_142843.avi
+2026-10-01T14:28:49+00:00,clip_guardado,75 cuadros,acceso_20261001_142843.avi
+2026-10-01T14:31:29+00:00,inicio,destino=10.208.1.36:5000 max_eventos=10,
+2026-10-01T14:31:31+00:00,acceso,rostros=1 decision_ms=108,acceso_20261001_143131.avi
+2026-10-01T14:31:36+00:00,cierre,fin del evento,acceso_20261001_143131.avi
+2026-10-01T14:31:36+00:00,clip_guardado,75 cuadros,acceso_20261001_143131.avi
+2026-10-01T14:31:36+00:00,clip_rotado,limite=10,acceso_20260313_153517.avi
+2026-10-01T14:34:05+00:00,acceso,rostros=1 decision_ms=111,acceso_20261001_143405.avi
+2026-10-01T14:34:10+00:00,cierre,fin del evento,acceso_20261001_143405.avi
+2026-10-01T14:34:11+00:00,clip_guardado,75 cuadros,acceso_20261001_143405.avi
+2026-10-01T14:34:11+00:00,clip_rotado,limite=10,acceso_20261001_142444.avi
+2026-10-01T14:35:34+00:00,apagado,codigo=0,
+2026-10-01T14:35:42+00:00,inicio,destino=10.208.1.36:5000 max_eventos=10,
+2026-10-01T14:35:42+00:00,apagado,codigo=0,
+2026-10-01T14:35:55+00:00,inicio,destino=10.208.1.36:5000 max_eventos=10,
+2026-10-01T14:35:55+00:00,apagado,codigo=0,
+2026-10-01T14:36:09+00:00,inicio,destino=10.208.1.36:5000 max_eventos=10,
+2026-10-01T14:37:57+00:00,acceso,rostros=1 decision_ms=108,acceso_20261001_143757.avi
+2026-10-01T14:38:03+00:00,cierre,fin del evento,acceso_20261001_143757.avi
+2026-10-01T14:38:03+00:00,clip_guardado,76 cuadros,acceso_20261001_143757.avi
+2026-10-01T14:38:03+00:00,clip_rotado,limite=10,acceso_20261001_142449.avi
+2026-10-01T14:38:37+00:00,acceso,rostros=1 decision_ms=132,acceso_20261001_143837.avi
+2026-10-01T14:38:42+00:00,cierre,fin del evento,acceso_20261001_143837.avi
+2026-10-01T14:38:43+00:00,clip_guardado,76 cuadros,acceso_20261001_143837.avi
+2026-10-01T14:38:43+00:00,clip_rotado,limite=10,acceso_20261001_142457.avi
+2026-10-01T14:39:44+00:00,acceso,rostros=1 decision_ms=152,acceso_20261001_143944.avi
+2026-10-01T14:39:49+00:00,cierre,fin del evento,acceso_20261001_143944.avi
+2026-10-01T14:39:49+00:00,clip_guardado,76 cuadros,acceso_20261001_143944.avi
+2026-10-01T14:39:49+00:00,clip_rotado,limite=10,acceso_20261001_142502.avi
+2026-10-01T14:41:18+00:00,inicio,destino=10.208.1.36:5000 max_eventos=10,

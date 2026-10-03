@@ -1,0 +1,8 @@
+
+== Versiones
+VERSION_ID=6.0.2
+PRETTY_NAME="Poky (Yocto Project Reference Distro) 6.0.2 (wrynose)"
+Linux taller 6.18.33-v8 #1 SMP PREEMPT Thu May 28 02:31:14 UTC 2026 aarch64 GNU/Linux
+gst-inspect-1.0 version 1.28.2
+GStreamer 1.28.2
+OpenCV 4.13.0 | numpy 2.4.3

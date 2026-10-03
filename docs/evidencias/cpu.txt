@@ -1,0 +1,15 @@
+
+== CPU de control_acceso.py (pid 961) durante 60 s
+Por hilo (los hilos de GStreamer se llaman como su queue):
+  python3              39.7 %
+  python3              25.8 %
+  python3              25.6 %
+  python3              25.5 %
+  q_codificador:s      16.3 %
+  q_analisis:src        4.0 %
+  q_red:src             1.6 %
+  q_grabacion:src       0.8 %
+  v4l2src0:src          0.3 %
+  vigilante             0.1 %
+TOTAL: 139.1 % de un núcleo (4 núcleos = 400 %)
+Para C2: repetir con SV_JPEGENC=v4l2jpegenc o SV_FORMATO_CAMARA=mjpeg y comparar.

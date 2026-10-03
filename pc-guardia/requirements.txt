@@ -1,0 +1,9 @@
+# Aplicación del guardia (security_guard_app.py)
+#
+# GStreamer y PyGObject se instalan con el gestor del sistema, no con pip:
+#   sudo apt install python3-gi gir1.2-gstreamer-1.0 gstreamer1.0-plugins-base \
+#                    gstreamer1.0-plugins-good openssh-client
+#
+# Si se usa un entorno virtual, créenlo con acceso a los paquetes del sistema:
+#   python3 -m venv --system-site-packages .venv
+PyQt6>=6.4

@@ -1,0 +1,45 @@
+
+== Versiones
+VERSION_ID=6.0.2
+PRETTY_NAME="Poky (Yocto Project Reference Distro) 6.0.2 (wrynose)"
+Linux taller 6.18.33-v8 #1 SMP PREEMPT Thu May 28 02:31:14 UTC 2026 aarch64 GNU/Linux
+gst-inspect-1.0 version 1.28.2
+GStreamer 1.28.2
+OpenCV 4.13.0 | numpy 2.4.3
+
+== Regenerando el registro de plugins
+  OK  v4l2src
+  OK  tee
+  OK  queue
+  OK  videorate
+  OK  videoscale
+  OK  videoconvert
+  OK  appsink
+  OK  appsrc
+  OK  jpegenc
+  OK  jpegdec
+  OK  rtpjpegpay
+  OK  udpsink
+  OK  avimux
+  OK  avidemux
+  OK  fakesink
+  (disponible v4l2jpegenc: codificador JPEG por hardware)
+
+== GPIO
+gpiochip0 17	"GPIO17"        	output consumer="control-acceso"
+gpiochip0 27	"GPIO27"        	output consumer="control-acceso"
+gpio=17=op,dh
+gpio=27=op,dl
+
+== Throttling
+get_throttled = NA   temperatura = 53069 m°C
+
+== Validando /home/root/eventos/acceso_20261001_143405.avi
+OK: 75 cuadros (2.50 s a 30 fps)
+
+== Clips en la tarjeta (máx. 10)
+10
+
+== Últimas estadísticas del servicio
+INFO estadisticas: ventana=63s fps_camara=14.3 fps_analisis=8.0 deteccion_ms_prom=38.2 deteccion_ms_max=77.4 captura_a_decision_ms_prom=108.2 captura_a_decision_ms_max=279.1 callback_grabacion_us_max=2844 eventos=2 negados_por_tiempo=0
+INFO estadisticas: ventana=60s fps_camara=15.0 fps_analisis=10.0 deteccion_ms_prom=41.2 deteccion_ms_max=51.3 captura_a_decision_ms_prom=112.7 captura_a_decision_ms_max=127.4 callback_grabacion_us_max=486 eventos=0 negados_por_tiempo=0

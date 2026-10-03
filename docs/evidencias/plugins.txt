@@ -1,0 +1,18 @@
+
+== Regenerando el registro de plugins
+  OK  v4l2src
+  OK  tee
+  OK  queue
+  OK  videorate
+  OK  videoscale
+  OK  videoconvert
+  OK  appsink
+  OK  appsrc
+  OK  jpegenc
+  OK  jpegdec
+  OK  rtpjpegpay
+  OK  udpsink
+  OK  avimux
+  OK  avidemux
+  OK  fakesink
+  (disponible v4l2jpegenc: codificador JPEG por hardware)
